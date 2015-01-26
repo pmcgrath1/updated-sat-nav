@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script type="text/javascript">
+
+ function insertToTable()
+            {
+              
+               var sampleData = 955;
+               console.log("saturdays");
+
+
+                $.getJSON('/insertTable',
+                    {
+                      data : sampleData
+                    },
+                        function(data)
+                            {
+                                console.log("hhh"+data)
+                                //$("#result").text(data.results);
+                            });
+                            return false;
+
+            }
+ 
+
+</script>
+    </head>
+
+        <body>
+
+
+            <h1>jQuery Example</h1>
+
+            <p><a href=# id="calculate" onclick="insertToTable()">Insert into database</a></p>
+
+    
+        </body>
+</html>
