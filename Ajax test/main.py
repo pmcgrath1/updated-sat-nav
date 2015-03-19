@@ -15,7 +15,7 @@ def add_numbers():
 
 	try:
 
-	    conn = psycopg2.connect("dbname='monday' user='postgres' host='localhost' password ='eastwood52095' ")
+	    conn = psycopg2.connect("dbname='ireland' user='postgres' host='localhost' password ='eastwood52095' ")
 	      
 
 	    cur = conn.cursor()
@@ -36,9 +36,46 @@ def add_numbers():
 	b = request.args.get('b', 0, type=int)
 	return jsonify(result=a + b)
 
-@app.route('/')
-def index():
-    return render_template('test.html')
+@app.route('/insert')
+def insertToDb():
+	print("Made it to insert")
+	try:
+
+		a = request.args.get('data', 0, type=str)
+
+		
+		conn = psycopg2.connect("dbname='ireland' user='postgres' host='localhost' password ='eastwood52095'")
+		cur = conn.cursor()
+		cur.execute("INSERT INTO gps_data(latlng) VALUES (%s)", (a,))
+		cur.close()
+		conn.commit()
+		print ("Connection to database successful")
+		conn.close()
+	except:
+
+		print ("I am unable to connect to the database")
+
+	return jsonify(result=100)
+
+
 
 
 app.run(debug=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

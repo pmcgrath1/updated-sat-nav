@@ -1,0 +1,22 @@
+{
+    "org.apache.cordova.file-transfer": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.file-transfer"
+        }
+    },
+    "com.cesidiodibenedetto.filechooser": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cdibened/filechooser.git",
+            "subdir": "."
+        }
+    },
+    "com.maginsoft.mfilechooser": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/MaginSoft/MFileChooser.git",
+            "subdir": "."
+        }
+    }
+}
