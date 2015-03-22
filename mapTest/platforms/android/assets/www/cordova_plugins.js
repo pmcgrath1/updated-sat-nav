@@ -162,6 +162,13 @@ module.exports = [
         "runs": true
     },
     {
+        "file": "plugins/com.maginsoft.mfilechooser/www/mfilechooser.js",
+        "id": "com.maginsoft.mfilechooser.MFileChooser",
+        "clobbers": [
+            "MFileChooser"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
         "id": "org.apache.cordova.file-transfer.FileTransferError",
         "clobbers": [
@@ -174,13 +181,6 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
-    },
-    {
-        "file": "plugins/com.maginsoft.mfilechooser/www/mfilechooser.js",
-        "id": "com.maginsoft.mfilechooser.MFileChooser",
-        "clobbers": [
-            "MFileChooser"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -188,8 +188,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.network-information": "0.2.15-dev",
     "org.apache.cordova.file": "1.3.3",
-    "org.apache.cordova.file-transfer": "0.5.0",
-    "com.maginsoft.mfilechooser": "1.0.0"
+    "com.maginsoft.mfilechooser": "1.0.0",
+    "org.apache.cordova.file-transfer": "0.5.0"
 }
 // BOTTOM OF METADATA
 });

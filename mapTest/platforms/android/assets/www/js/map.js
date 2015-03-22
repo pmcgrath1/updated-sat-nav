@@ -95,12 +95,12 @@ function onLocationFound(e) //e
       
       route_data.push(e.latlng);
       var d = new Date();
+      //+d.toISOString()
+      databaseToString.push("<trkpt lat="+'"'+e.latlng.lat+'"'+ " lon="+'"'+ e.latlng.lng+'"'+">"+"<time>"+d.toISOString()+"</time>"+"\r\n");
       
-
-
-      databaseToString.push(["<trkpt lat="+'"'+e.latlng.lat+'"'+ " lon="+'"'+ e.latlng.lng+'"'+">"+"<time> "+d.toISOString()+" </time>"].toString());
+      
       //databaseToString.push([e.latlng.lat, e.latlng.lng].toString());
-      uniqueCoords =[];
+    /*  uniqueCoords =[];
       unique = true;
       var x,y;
       for (x=0; x< databaseToString.length; x++)
@@ -126,7 +126,7 @@ function onLocationFound(e) //e
 
 
           }
-      
+      */
 
         }
 
@@ -144,10 +144,12 @@ function store()
 {
 alert("Store");
 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+
+
 function gotFS(fileSystem) 
   {
     alert("gotFS to file");
-    fileSystem.root.getFile("testFile5.gpx", {create: true}, gotFileEntry, fail);
+    fileSystem.root.getFile("testFile5.txt", {create: true}, gotFileEntry, fail);
   }
  
 function fail(error)
@@ -158,12 +160,9 @@ function fail(error)
 
 function gotFileEntry(fileEntry) 
   {
-     alert("Write to file");
+     
     fileEntry.createWriter(gotFileWriter, fail);
-
-
-
-
+    alert("File saved at "+fileEntry.toURL());
 
   }
 
@@ -171,81 +170,76 @@ function gotFileEntry(fileEntry)
 function gotFileWriter(writer)
  {
   
-  for(y = 0; y <= uniqueCoordsWithStamp.length; y ++)
-  {
-    
-
-     writer.write("?xml version='1.0' encoding='UTF-8'?>"+"\n"+"<trk>" + "\n"+ uniqueCoords.toString() +"\n"+"</trk>" +"\n"+"</gpx>");
+  writer.write("?xml version='1.0' encoding='UTF-8'?>" +"\n"+ "<trk>"+"\n" + databaseToString.join("") + "</trk>" + "</gpx>" );
      
      
-  } 
+  }
 
  
- 
-  //  writer.onwriteend = function(evt) 
-      // {
-        //console.log("contents of file now 'some sample text'");
-        //writer.truncate(11);  
-       // writer.onwriteend = function(evt) 
-          //   {
-                //console.log("contents of file now 'some sample'");
-                //writer.seek(5);
-             //   writer.write(" Hello world is it me your looking for");
-             //   writer.onwriteend = function(evt)
-              //    {
-              //      console.log("contents of file now 'some different text'");
-               //   }
-           // };
+  } // end of store function
+
+
+
+/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+function upload(){
+
+var file_upd =  new FormData($('#upload_file')[0]);
+$.ajax({
+
+   type:'post',
+   url: "http://pmcgrath1.pythonanywhere.com/upload",
+   data: file_upd,
+   async: false,
+   processData:false,
+   cache:false,
+   contentType: false,
+
+   success: function(data)
+      {
+          if (data.result ==100)
+          {
+            alert('successfully uploaded');
+          }
+
+      },
+      error: function(data)
+      {
+          alert('Upload failed');
+      },
+
+
+
    
 
-   // };
+
+
+
+});
   
-};
 
 
 
+}
 
 
+/*
+function fileTest()
+{
+window.plugins.mfilechooser.open([], function (uri) {
 
+            alert(uri);
 
+            }, function (error) {
 
+            alert(error);
 
+            });
+}
+*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*   
+  /*   
             window.plugins.mfilechooser.open([], function (uri) {
 
             //alert(uri);
@@ -275,6 +269,6 @@ function gotFileWriter(writer)
                             });
                             return false ;
 */
-            };
+           
 
 

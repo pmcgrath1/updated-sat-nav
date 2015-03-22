@@ -107,6 +107,8 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/cordova_plugins.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/css \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/test.php \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/upload.html \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/page.html \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/img \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/index.html \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js \
@@ -120,6 +122,7 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/leaflet-routing-machine.min.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/leaflet-routing-machine.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/map.js \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/uploadfile.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/AnimatedMarker.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/plugins/com.maginsoft.mfilechooser \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer \

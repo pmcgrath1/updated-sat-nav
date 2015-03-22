@@ -31,7 +31,7 @@
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js">/</script>
+<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js">/</script>/http://www.gajotres.net/jquery-mobil
 
         <title>Sat-Nav</title>
 
@@ -40,17 +40,22 @@
     <body onload="onLoad()">
          <div data-role="page" id="index">
             <div data-theme="b" data-role="header">
-                <h1>Track Page</h1>
+                <h1>Sat-Nav</h1>
             </div>
              
             <div data-role="content">
-                <div id="map"></div>
-                <div data-role="button" data-icon="star"  id="stopTracking " onclick="stopTracking()">Stop Tracking</a></div>
-                <div data-role="button" data-icon="star"   id="startTracking" onclick="store()" >Store Route</a> </div> 
-                <a href="page.html" data-role="button"  data-icon="home"  >Home</a>
-               
+            <a href="index.html" data-role="button" data-icon="eye" data-iconpos="top" rel="external">Record New Route</a>
 
-</div>
+            <a href="" data-role="button" data-icon="navigation" data-iconpos="top"  rel="external">Navigation</a>
+
+            <form id ="upload_file"  method="post" enctype="multipart/form-data" role="form" >
+
+            <a href="upload.html" data-role="button" data-icon="arrow-u" data-iconpos="top"  rel="external"  >Upload File</a>
+             
+
+            
+             </form>
+</div> 
            
 <script type="text/javascript" src="js/map.js"></script>
 

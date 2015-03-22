@@ -17,11 +17,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
+                            "xml": "<feature name=\"MFileChooser\"><param name=\"android-package\" value=\"com.maginsoft.phonegap.plugin.MFileChooser\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"MFileChooser\"><param name=\"android-package\" value=\"com.maginsoft.phonegap.plugin.MFileChooser\" /></feature>",
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -134,10 +134,10 @@
         "org.apache.cordova.file": {
             "PACKAGE_NAME": "com.example.map"
         },
-        "org.apache.cordova.file-transfer": {
+        "com.maginsoft.mfilechooser": {
             "PACKAGE_NAME": "com.example.map"
         },
-        "com.maginsoft.mfilechooser": {
+        "org.apache.cordova.file-transfer": {
             "PACKAGE_NAME": "com.example.map"
         }
     },
