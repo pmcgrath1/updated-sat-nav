@@ -40,23 +40,13 @@
     <body onload="onLoad()">
         <div data-role="page" id="index">
         <div data-theme="b" data-role="header">
-                <h1>Upload File</h1>
+                <h1>Enter route details</h1>
         </div>
         <div data-role="content">
 
-        <form id ="upload_file"  method="post" enctype="multipart/form-data" role="form" >
-
-        <label>Username:</label> <input type='text' name='userid' placeholder='Username'>
-
-        <br>
-        
-        <input  name="file" data-icon="star"  data-iconpos="top"type ="file"/>
-
-        <br>
-
-        <a data-role="button" data-icon="star"  rel="external" type="file" onclick="upload()"  data-inline="true" >Upload File</a>
-             
-        <a href="page.html" data-role="button" class="custom-btn" data-icon="home" data-inline="true"  >Home</a>
+        <label>Route name:</label> <input type='text' id='routename' placeholder='Route name'>
+         <a href="#" data-role="button" class="custom-btn" data-inline="true"data-icon="eye" onclick="store()"  rel="external">Save</a>
+         <a href="page.html" data-role="button" class="custom-btn" data-icon="home" data-inline="true"  >Home</a>
         </form></div>
            <br><br>
            

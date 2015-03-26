@@ -45,11 +45,18 @@
              
             <div data-role="content">
                 <div id="map"></div>
-                <div data-role="button" data-icon="star"  id="stopTracking " onclick="stopTracking()">Stop Tracking</a></div>
-                <div data-role="button" data-icon="star"   id="startTracking" onclick="store()" >Store Route</a> </div> 
-                <a href="page.html" data-role="button"  data-icon="home"  >Home</a>
                
+    <div class="ui-input-btn ui-btn ui-corner-all">
+       
+        <input data-enhanced="true" value="Stop Tracking" type="button" data-icon="star"   id="startTracking" onclick="stopTracking()">
+    </div>
 
+              
+               <!-- <div data-role="button" data-icon="star"  id="stopTracking " onclick="stopTracking()"   >Stop Tracking</a></div>-->
+ <!--<input   data-role="button" data-icon="star"   id="startTracking" onclick="store()" class="custom-btn"  data-inline="true" >Store Route</a>-->
+
+<a href="filedetails.html" data-role="button"  data-icon="star"  class="custom-btn"  data-inline="true">Store Route</a>              
+<a href="page.html" data-role="button"  data-icon="home"  class="custom-btn"  data-inline="true">Home</a>
 </div>
            
 <script type="text/javascript" src="js/map.js"></script>

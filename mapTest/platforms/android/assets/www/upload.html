@@ -38,22 +38,32 @@
 
 </head>
     <body onload="onLoad()">
-         <div data-role="page" id="index">
-            <div data-theme="b" data-role="header">
+        <div data-role="page" id="index">
+        <div data-theme="b" data-role="header">
                 <h1>Upload File</h1>
-            </div>
-             
-            <div data-role="content">
-            <a href="page.html" data-role="button" data-icon="home" data-iconpos="top" >Home</a>
-            <form id ="upload_file"  method="post" enctype="multipart/form-data" role="form" >
-             <a data-role="button" data-icon="star" data-iconpos="top" rel="external" type="file" onclick="upload()" >Upload File</a>
-             <input data-role="button" name="file" data-icon="star"  data-iconpos="top"type ="file"/>
-            </form>
+        </div>
+        <div data-role="content">
 
+        <form id ="upload_file"  method="post" enctype="multipart/form-data" role="form" >
+
+        <label>Username:</label> <input type='text' name='userid' placeholder='Username'>
+
+        <br>
+        
+        <input  name="file" data-icon="star"  data-iconpos="top"type ="file"/>
+
+        <br>
+
+        <a data-role="button" data-icon="star"  rel="external" type="file" onclick="upload()"  data-inline="true" >Upload File</a>
+             
+        <a href="page.html" data-role="button" class="custom-btn" data-icon="home" data-inline="true"  >Home</a>
+        </form></div>
+           <br><br>
+           
 </div> 
            
 <script type="text/javascript" src="js/map.js"></script>
-
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
  
 

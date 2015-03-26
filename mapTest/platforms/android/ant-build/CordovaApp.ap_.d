@@ -105,7 +105,9 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/_where-is-www.txt \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/cordova.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/cordova_plugins.js \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/main.py \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/css \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/filedetails.html \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/test.php \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/upload.html \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/page.html \
@@ -119,6 +121,7 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/img/leaflet.routing.icons.svg \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/img/logo.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/index.js \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/jquery.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/leaflet-routing-machine.min.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/leaflet-routing-machine.js \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/assets/www/js/map.js \

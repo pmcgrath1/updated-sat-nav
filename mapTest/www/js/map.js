@@ -11,7 +11,9 @@ var databaseToString =[] ;
 var uniqueCoords=[];
 var uniqueCoordsWithStamp=[];
 var fileData ="";
- var temp;
+var temp;
+var rname;
+
 function onLoad()
   {
     document.addEventListener("deviceready", onDeviceReady(), false);
@@ -48,6 +50,7 @@ function loadMapsApi()
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
 
+
     } //end of loadMapsApi function
 
 function watchLocation()
@@ -83,7 +86,7 @@ function stopTracking()
     {
       clearInterval(interval);
       map.stopLocate();
-      alert("Here is your route cordinates "+route_data);
+      alert("Route recording has been stopped");
       var polyline = L.polyline(route_data,{ weight: 5,color: 'red'}).addTo(map);
       map.fitBounds(polyline.getBounds());
     }
@@ -96,11 +99,11 @@ function onLocationFound(e) //e
       route_data.push(e.latlng);
       var d = new Date();
       //+d.toISOString()
-      databaseToString.push("<trkpt lat="+'"'+e.latlng.lat+'"'+ " lon="+'"'+ e.latlng.lng+'"'+">"+"<time>"+d.toISOString()+"</time>"+"</trkpt>"+"\r\n");
+      databaseToString.push("<trkpt lat="+'"'+e.latlng.lat+'"'+ " lon="+'"'+ e.latlng.lng+'"'+">"+"<time>"+d.toISOString().slice(0, 19) + 'Z'+"</time>"+"</trkpt>"+"\r\n");
       
       
       //databaseToString.push([e.latlng.lat, e.latlng.lng].toString());
-    /*  uniqueCoords =[];
+     uniqueCoords =[];
       unique = true;
       var x,y;
       for (x=0; x< databaseToString.length; x++)
@@ -121,12 +124,12 @@ function onLocationFound(e) //e
               console.log(databaseToString[x]);
              
               uniqueCoords.push(databaseToString[x]);
-              //uniqueCoordsWithStamp.push(databaseToString[x])
+             
             }
 
 
           }
-      */
+      
 
         }
 
@@ -142,14 +145,14 @@ function onLocationError(e)
 function store()
 
 {
-alert("Store");
+  rname = document.getElementById("routename").value;
 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 
 
 function gotFS(fileSystem) 
   {
-    alert("gotFS to file");
-    fileSystem.root.getFile("philip.gpx", {create: true}, gotFileEntry, fail);
+    
+    fileSystem.root.getFile(rname+".gpx", {create: true}, gotFileEntry, fail);
   }
  
 function fail(error)
@@ -176,7 +179,7 @@ function gotFileWriter(writer)
                  "\n"+
                  "<trk>"+
                  "\n"
-                  + databaseToString.join("") +
+                  + uniqueCoords.join("") +
                    "</trk>" + "</gpx>" );
      
      
