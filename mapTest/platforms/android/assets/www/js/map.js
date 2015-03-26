@@ -96,7 +96,7 @@ function onLocationFound(e) //e
       route_data.push(e.latlng);
       var d = new Date();
       //+d.toISOString()
-      databaseToString.push("<trkpt lat="+'"'+e.latlng.lat+'"'+ " lon="+'"'+ e.latlng.lng+'"'+">"+"<time>"+d.toISOString()+"</time>"+"\r\n");
+      databaseToString.push("<trkpt lat="+'"'+e.latlng.lat+'"'+ " lon="+'"'+ e.latlng.lng+'"'+">"+"<time>"+d.toISOString()+"</time>"+"</trkpt>"+"\r\n");
       
       
       //databaseToString.push([e.latlng.lat, e.latlng.lng].toString());
@@ -149,7 +149,7 @@ window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 function gotFS(fileSystem) 
   {
     alert("gotFS to file");
-    fileSystem.root.getFile("testFile5.txt", {create: true}, gotFileEntry, fail);
+    fileSystem.root.getFile("philip.gpx", {create: true}, gotFileEntry, fail);
   }
  
 function fail(error)
@@ -170,7 +170,14 @@ function gotFileEntry(fileEntry)
 function gotFileWriter(writer)
  {
   
-  writer.write("?xml version='1.0' encoding='UTF-8'?>" +"\n"+ "<trk>"+"\n" + databaseToString.join("") + "</trk>" + "</gpx>" );
+  writer.write("<?xml version='1.0' encoding='UTF-8'?>" 
+                 +"\n"+ 
+                 "<gpx version='1.0'>"+
+                 "\n"+
+                 "<trk>"+
+                 "\n"
+                  + databaseToString.join("") +
+                   "</trk>" + "</gpx>" );
      
      
   }
@@ -211,12 +218,7 @@ $.ajax({
 
 
 
-   
-
-
-
-
-});
+      });
   
 
 
