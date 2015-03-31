@@ -18,5 +18,11 @@
             "url": "https://github.com/MaginSoft/MFileChooser.git",
             "subdir": "."
         }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.splashscreen"
+        }
     }
 }

@@ -23,6 +23,16 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/com/maginsoft/data/Category.class \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/com/maginsoft/adapters/DirectoryAdapter.class \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/com/maginsoft/phonegap/plugin/MFileChooser.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$6$1.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$5.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$1.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$7.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$2.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$6.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$5$1.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$4.class \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$3.class \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$2.class \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$16.class \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$26.class \

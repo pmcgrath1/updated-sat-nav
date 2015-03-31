@@ -13,6 +13,9 @@ var uniqueCoordsWithStamp=[];
 var fileData ="";
 var temp;
 var rname;
+var today;
+var date;
+var d;
 
 function onLoad()
   {
@@ -22,7 +25,8 @@ function onLoad()
 
 function onDeviceReady()
 	{ 
-	   document.addEventListener("online", onOnline, false);
+     //navigator.splashscreen.show();
+     document.addEventListener("online", onOnline, false);
      document.addEventListener("resume", onResume, false);
      loadMapsApi();
      interval = setInterval(watchLocation,1000);
@@ -31,6 +35,7 @@ function onDeviceReady()
 
 function onOnline()
     {
+
       loadMapsApi();
     }
 
@@ -55,32 +60,9 @@ function loadMapsApi()
 
 function watchLocation()
     {
-     
      map.locate({watch:false,setView:L.latLng,enableHighAccuracy:true});
      var d = new Date();
-
-   // alert("Cordova geo plugin timestamp "+d.toISOString());
-       /*
-        watch_id = navigator.geolocation.watchPosition(
-    
-      // Success
-        function(position){
-            tracking_data.push(position);
-            alert(position.coords.latitude );
-        },
-        
-        // Error
-        function(error){
-            console.log(error);
-        },
-        
-        // Settings
-        { frequency: 3000, enableHighAccuracy: true });
-
-
-*/
-
-     }
+   }
  
 function stopTracking()
     {
@@ -90,6 +72,14 @@ function stopTracking()
       var polyline = L.polyline(route_data,{ weight: 5,color: 'red'}).addTo(map);
       map.fitBounds(polyline.getBounds());
     }
+
+function exitFromApp(){
+
+
+navigator.app.exitApp();
+
+}
+
 
 
 
@@ -146,13 +136,18 @@ function store()
 
 {
   rname = document.getElementById("routename").value;
+  today = new Date().toISOString().slice(0, 10);
+  
+
+  
+  
 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 
 
 function gotFS(fileSystem) 
   {
     
-    fileSystem.root.getFile(rname+".gpx", {create: true}, gotFileEntry, fail);
+    fileSystem.root.getFile(rname+"_"+today+".gpx", {create: true}, gotFileEntry, fail);
   }
  
 function fail(error)
@@ -214,7 +209,7 @@ $.ajax({
           }
 
       },
-      error: function(data)
+    error: function(data)
       {
           alert('Upload failed');
       },

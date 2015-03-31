@@ -32,9 +32,10 @@ int drawable ppt 0x7f020017
 int drawable rar 0x7f020018
 int drawable rtf 0x7f020019
 int drawable screen 0x7f02001a
-int drawable txt 0x7f02001b
-int drawable xls 0x7f02001c
-int drawable zip 0x7f02001d
+int drawable screener 0x7f02001b
+int drawable txt 0x7f02001c
+int drawable xls 0x7f02001d
+int drawable zip 0x7f02001e
 int id details 0x7f080003
 int id drawer_layout 0x7f080004
 int id left_drawer 0x7f080005
