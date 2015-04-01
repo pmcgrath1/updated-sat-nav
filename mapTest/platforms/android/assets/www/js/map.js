@@ -25,7 +25,7 @@ function onLoad()
 
 function onDeviceReady()
 	{ 
-     //navigator.splashscreen.show();
+     
      document.addEventListener("online", onOnline, false);
      document.addEventListener("resume", onResume, false);
      loadMapsApi();

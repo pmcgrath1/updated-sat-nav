@@ -9,6 +9,7 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/drawable-port-mdpi/screen.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/drawable-port-hdpi/screen.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/drawable-port-hdpi/screener.png \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/drawable-port-hdpi/android.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/drawable-land-mdpi/screen.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/layout/file_row.xml \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/res/layout/drawer_list_item.xml \
@@ -61,6 +62,7 @@
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable-port-mdpi/screen.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable-port-hdpi/screen.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable-port-hdpi/screener.png \
+/home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable-port-hdpi/android.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable-land-mdpi/screen.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable/divider_line_grey.png \
 /home/philip/Cordova/Sat-NavProject/updated-sat-nav/mapTest/platforms/android/ant-build/res/drawable/drawer_shadow.9.png \
